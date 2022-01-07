@@ -1,0 +1,17 @@
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\bin\Debug\Sql_Project.exe.config
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\bin\Debug\Sql_Project.exe
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\bin\Debug\Sql_Project.pdb
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.csproj.AssemblyReference.cache
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.csproj.SuggestedBindingRedirects.cache
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Properties.Resources.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.csproj.GenerateResource.cache
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.csproj.CoreCompileInputs.cache
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.exe
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.pdb
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.FrmLogin.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Officer.FrmOfficerLogin.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Student.FrmStudentLogin.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Teacher.FrmTeacherLogin.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Officer.FrmOfficerDetail.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Student.FrmStudentDetail.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Teacher.FrmTeacherDetail.resources

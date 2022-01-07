@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "db0cee50-dc05-4acf-98b0-a051e2aca482": {
+      "ProjectGuid": "db0cee50-dc05-4acf-98b0-a051e2aca482",
+      "DisplayName": "Sql_Project",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
