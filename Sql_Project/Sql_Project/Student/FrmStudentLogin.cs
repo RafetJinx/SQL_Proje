@@ -28,7 +28,7 @@ namespace Sql_Project.Student
             SqlDataReader sqlDataReader = cmd.ExecuteReader();
             if (sqlDataReader.Read()){
                 FrmStudentDetail frmStudentDetail = new FrmStudentDetail();
-                frmStudentDetail.Tc_S = mskS_StudentNumber.Text;
+                frmStudentDetail.studentNumber = mskS_StudentNumber.Text;
                 frmStudentDetail.Show();
                 this.Hide();
             }

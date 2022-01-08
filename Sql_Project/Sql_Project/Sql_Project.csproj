@@ -67,17 +67,41 @@
     <Compile Include="SqlConn.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\FrmStudentApprovedLessons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\FrmStudentApprovedLessons.Designer.cs">
+      <DependentUpon>FrmStudentApprovedLessons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\FrmStudentAwatingLessonApproved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\FrmStudentAwatingLessonApproved.Designer.cs">
+      <DependentUpon>FrmStudentAwatingLessonApproved.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\FrmStudentDetail.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Student\FrmStudentDetail.Designer.cs">
       <DependentUpon>FrmStudentDetail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student\FrmStudentLessonRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\FrmStudentLessonRegistration.Designer.cs">
+      <DependentUpon>FrmStudentLessonRegistration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\FrmStudentLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Student\FrmStudentLogin.Designer.cs">
       <DependentUpon>FrmStudentLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\FrmStudentShowNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\FrmStudentShowNote.Designer.cs">
+      <DependentUpon>FrmStudentShowNote.cs</DependentUpon>
     </Compile>
     <Compile Include="Teacher\FrmTeacherDetail.cs">
       <SubType>Form</SubType>
@@ -109,11 +133,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Student\FrmStudentApprovedLessons.resx">
+      <DependentUpon>FrmStudentApprovedLessons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\FrmStudentAwatingLessonApproved.resx">
+      <DependentUpon>FrmStudentAwatingLessonApproved.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student\FrmStudentDetail.resx">
       <DependentUpon>FrmStudentDetail.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student\FrmStudentLessonRegistration.resx">
+      <DependentUpon>FrmStudentLessonRegistration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student\FrmStudentLogin.resx">
       <DependentUpon>FrmStudentLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\FrmStudentShowNote.resx">
+      <DependentUpon>FrmStudentShowNote.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher\FrmTeacherDetail.resx">
       <DependentUpon>FrmTeacherDetail.cs</DependentUpon>
