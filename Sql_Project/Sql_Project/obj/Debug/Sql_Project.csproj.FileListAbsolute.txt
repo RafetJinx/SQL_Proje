@@ -22,3 +22,6 @@ C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\
 C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Officer.FrmOfficerAddingStudent.resources
 C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Officer.FrmOfficerAppointAdvisor.resources
 C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Officer.FrmOfficerAddingTeacher.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Teacher.FrmTeacherApproveLesson.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Teacher.FrmTeacherShowStudentProfile.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Teacher.FrmTeacherStudentGradeATest.resources

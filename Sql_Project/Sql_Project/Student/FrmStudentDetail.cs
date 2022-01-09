@@ -22,7 +22,12 @@ namespace Sql_Project.Student
         public string studentNumber;
         private void FrmStudentDetail_Load(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("SELECT s.StudentIdentityNumber,s.StudentNumber,s.StudentName + ' ' + s.StudentLastName,s.StudentFaculty,s.StudentDepartment,t.TeacherName + ' ' + t.TeacherLastName,s.StudentDateOfRegistiration FROM Students AS s INNER JOIN Teachers AS t ON s.StudentAdvisorId=t.TeacherId WHERE s.StudentNumber=@p1", conn.connection());
+            SqlCommand cmd = new SqlCommand("SELECT s.StudentIdentityNumber,s.StudentNumber,s.StudentName + ' ' + s.StudentLastName," +
+                "s.StudentFaculty,s.StudentDepartment,t.TeacherName + ' ' + t.TeacherLastName,s.StudentDateOfRegistiration " +
+                "FROM Students AS s " +
+                "INNER JOIN Teachers AS t " +
+                "ON s.StudentAdvisorId=t.TeacherId " +
+                "WHERE s.StudentNumber=@p1", conn.connection());
             cmd.Parameters.AddWithValue("@p1", studentNumber);
             SqlDataReader sqlDataReader = cmd.ExecuteReader();
             while (sqlDataReader.Read())

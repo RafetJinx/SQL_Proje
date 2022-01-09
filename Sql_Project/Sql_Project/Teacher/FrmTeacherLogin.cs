@@ -38,5 +38,10 @@ namespace Sql_Project.Teacher
                 MessageBox.Show("Hatalı TC veya şifre", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void FrmTeacherLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

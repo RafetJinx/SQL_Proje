@@ -121,6 +121,24 @@
     <Compile Include="Student\FrmStudentShowNote.Designer.cs">
       <DependentUpon>FrmStudentShowNote.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\FrmTeacherShowStudentProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\FrmTeacherShowStudentProfile.Designer.cs">
+      <DependentUpon>FrmTeacherShowStudentProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\FrmTeacherStudentGradeATest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\FrmTeacherStudentGradeATest.Designer.cs">
+      <DependentUpon>FrmTeacherStudentGradeATest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\FrmTeacherApproveLesson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\FrmTeacherApproveLesson.Designer.cs">
+      <DependentUpon>FrmTeacherApproveLesson.cs</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\FrmTeacherDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,11 +196,20 @@
     <EmbeddedResource Include="Student\FrmStudentShowNote.resx">
       <DependentUpon>FrmStudentShowNote.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\FrmTeacherShowStudentProfile.resx">
+      <DependentUpon>FrmTeacherShowStudentProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\FrmTeacherApproveLesson.resx">
+      <DependentUpon>FrmTeacherApproveLesson.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Teacher\FrmTeacherDetail.resx">
       <DependentUpon>FrmTeacherDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher\FrmTeacherLogin.resx">
       <DependentUpon>FrmTeacherLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\FrmTeacherStudentGradeATest.resx">
+      <DependentUpon>FrmTeacherStudentGradeATest.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

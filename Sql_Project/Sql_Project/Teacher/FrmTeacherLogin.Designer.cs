@@ -107,6 +107,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmTeacherLogin";
             this.Text = "FrmTeacherLogin";
+            this.Load += new System.EventHandler(this.FrmTeacherLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
