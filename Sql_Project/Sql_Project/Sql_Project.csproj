@@ -52,6 +52,24 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Officer\FrmOfficerAddingStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Officer\FrmOfficerAddingStudent.Designer.cs">
+      <DependentUpon>FrmOfficerAddingStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Officer\FrmOfficerAddingTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Officer\FrmOfficerAddingTeacher.Designer.cs">
+      <DependentUpon>FrmOfficerAddingTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Officer\FrmOfficerAppointAdvisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Officer\FrmOfficerAppointAdvisor.Designer.cs">
+      <DependentUpon>FrmOfficerAppointAdvisor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Officer\FrmOfficerDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +136,15 @@
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Officer\FrmOfficerAddingStudent.resx">
+      <DependentUpon>FrmOfficerAddingStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Officer\FrmOfficerAddingTeacher.resx">
+      <DependentUpon>FrmOfficerAddingTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Officer\FrmOfficerAppointAdvisor.resx">
+      <DependentUpon>FrmOfficerAppointAdvisor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Officer\FrmOfficerDetail.resx">
       <DependentUpon>FrmOfficerDetail.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +197,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

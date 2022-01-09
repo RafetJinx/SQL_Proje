@@ -19,3 +19,6 @@ C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\
 C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Student.FrmStudentLessonRegistration.resources
 C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Student.FrmStudentApprovedLessons.resources
 C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Student.FrmStudentAwatingLessonApproved.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Officer.FrmOfficerAddingStudent.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Officer.FrmOfficerAppointAdvisor.resources
+C:\Users\rafet\OneDrive\noname\Masaüstü\SQL_Proje\Sql_Project\Sql_Project\obj\Debug\Sql_Project.Officer.FrmOfficerAddingTeacher.resources
