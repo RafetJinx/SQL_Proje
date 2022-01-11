@@ -23,6 +23,7 @@ namespace Sql_Project.Officer
 
         private void FrmOfficerDetail_Load(object sender, EventArgs e)
         {
+            // TC No'su verilmis olan memurun bilgilerini getiriyoruz
             SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Officers WHERE OfficerIdentityNumber = @p1", conn.connection());
             sqlCommand.Parameters.AddWithValue("@p1", Tc_O);
             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
@@ -40,6 +41,7 @@ namespace Sql_Project.Officer
 
         private void btnIncreaseGrade_Click(object sender, EventArgs e)
         {
+            // Butun ogrencilerin yariyil'ini bir (1) artttiriyoruz
             if (MessageBox.Show("BÜTÜN ÖĞRENCİLERİN YARIYILI BİR (1) ARTTIRILACAKTIR!", "UYARI", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
             {
                 SqlCommand sqlCommand = new SqlCommand("UPDATE Students SET StudentGrade += 1", conn.connection());

@@ -24,6 +24,7 @@ namespace Sql_Project.Student
         // ShowTheStudentsAwaitingLessonApproved
         public void ShowTheAwaitingLessonApprovals()
         {
+            // Ogrencinin o donem almak istedigi ve danisman onayı bekleyen dersleri datagrid'te listeliyoruz
             DataTable dataTable = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(
                 "SELECT l.LessonName AS [Dersin Adı], t.TeacherName + ' ' + t.TeacherLastName AS [Dersi Veren Öğretmen], " +
@@ -59,6 +60,7 @@ namespace Sql_Project.Student
 
         private void btnDeleteLesson_Click(object sender, EventArgs e)
         {
+            // Ogrenci danisman onayina gondermis oldugu bir dersi danisman onayindan cikartip o dersi almamaya karar verdigi zaman sectigi dersi danisman onayi bekleyen dersler listesinden siliyoruz
             SqlCommand sqlCommand = new SqlCommand("DELETE StudentsAwaitingLessonsApproval " +
                 "WHERE StudentId = (SELECT StudentId FROM Students WHERE StudentNumber = @p1) " +
                 "AND StudentsAwaitingLessonsApproval.GivingLessonsByTeacherId = (SELECT gtl.Id FROM GivingLessonsByTeachers AS gtl " +

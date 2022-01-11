@@ -46,13 +46,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxFastAccess = new System.Windows.Forms.GroupBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.btnGetTranscript = new System.Windows.Forms.Button();
             this.btnViewNote = new System.Windows.Forms.Button();
+            this.btnGetTranscript = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnListApprovedLessonRegistrations = new System.Windows.Forms.Button();
             this.btnRegisterLesson = new System.Windows.Forms.Button();
             this.groupBoxDataDisplay = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBoxPersonalInformation.SuspendLayout();
             this.groupBoxFastAccess.SuspendLayout();
             this.groupBoxDataDisplay.SuspendLayout();
@@ -88,9 +88,9 @@
             this.lblFullName.AutoSize = true;
             this.lblFullName.Location = new System.Drawing.Point(207, 100);
             this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(80, 22);
+            this.lblFullName.Size = new System.Drawing.Size(60, 22);
             this.lblFullName.TabIndex = 15;
-            this.lblFullName.Text = "label14";
+            this.lblFullName.Text = "_____";
             // 
             // label9
             // 
@@ -106,45 +106,45 @@
             this.lblDateofRegistiration.AutoSize = true;
             this.lblDateofRegistiration.Location = new System.Drawing.Point(207, 208);
             this.lblDateofRegistiration.Name = "lblDateofRegistiration";
-            this.lblDateofRegistiration.Size = new System.Drawing.Size(80, 22);
+            this.lblDateofRegistiration.Size = new System.Drawing.Size(60, 22);
             this.lblDateofRegistiration.TabIndex = 13;
-            this.lblDateofRegistiration.Text = "label13";
+            this.lblDateofRegistiration.Text = "_____";
             // 
             // lblAdvisorName
             // 
             this.lblAdvisorName.AutoSize = true;
             this.lblAdvisorName.Location = new System.Drawing.Point(207, 181);
             this.lblAdvisorName.Name = "lblAdvisorName";
-            this.lblAdvisorName.Size = new System.Drawing.Size(80, 22);
+            this.lblAdvisorName.Size = new System.Drawing.Size(60, 22);
             this.lblAdvisorName.TabIndex = 12;
-            this.lblAdvisorName.Text = "label12";
+            this.lblAdvisorName.Text = "_____";
             // 
             // lblFacultyName
             // 
             this.lblFacultyName.AutoSize = true;
             this.lblFacultyName.Location = new System.Drawing.Point(207, 127);
             this.lblFacultyName.Name = "lblFacultyName";
-            this.lblFacultyName.Size = new System.Drawing.Size(80, 22);
+            this.lblFacultyName.Size = new System.Drawing.Size(60, 22);
             this.lblFacultyName.TabIndex = 10;
-            this.lblFacultyName.Text = "label10";
+            this.lblFacultyName.Text = "_____";
             // 
             // lblDepartmentName
             // 
             this.lblDepartmentName.AutoSize = true;
             this.lblDepartmentName.Location = new System.Drawing.Point(207, 154);
             this.lblDepartmentName.Name = "lblDepartmentName";
-            this.lblDepartmentName.Size = new System.Drawing.Size(80, 22);
+            this.lblDepartmentName.Size = new System.Drawing.Size(60, 22);
             this.lblDepartmentName.TabIndex = 11;
-            this.lblDepartmentName.Text = "label11";
+            this.lblDepartmentName.Text = "_____";
             // 
             // lblStudentNumber
             // 
             this.lblStudentNumber.AutoSize = true;
             this.lblStudentNumber.Location = new System.Drawing.Point(207, 73);
             this.lblStudentNumber.Name = "lblStudentNumber";
-            this.lblStudentNumber.Size = new System.Drawing.Size(70, 22);
+            this.lblStudentNumber.Size = new System.Drawing.Size(60, 22);
             this.lblStudentNumber.TabIndex = 9;
-            this.lblStudentNumber.Text = "label9";
+            this.lblStudentNumber.Text = "_____";
             // 
             // label7
             // 
@@ -169,9 +169,9 @@
             this.lblIdentityNumber.AutoSize = true;
             this.lblIdentityNumber.Location = new System.Drawing.Point(207, 46);
             this.lblIdentityNumber.Name = "lblIdentityNumber";
-            this.lblIdentityNumber.Size = new System.Drawing.Size(70, 22);
+            this.lblIdentityNumber.Size = new System.Drawing.Size(60, 22);
             this.lblIdentityNumber.TabIndex = 8;
-            this.lblIdentityNumber.Text = "label8";
+            this.lblIdentityNumber.Text = "_____";
             // 
             // label5
             // 
@@ -242,6 +242,16 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnViewNote
+            // 
+            this.btnViewNote.Location = new System.Drawing.Point(203, 88);
+            this.btnViewNote.Name = "btnViewNote";
+            this.btnViewNote.Size = new System.Drawing.Size(173, 94);
+            this.btnViewNote.TabIndex = 2;
+            this.btnViewNote.Text = "Not Görüntüle";
+            this.btnViewNote.UseVisualStyleBackColor = true;
+            this.btnViewNote.Click += new System.EventHandler(this.btnViewNote_Click);
+            // 
             // btnGetTranscript
             // 
             this.btnGetTranscript.Location = new System.Drawing.Point(203, 26);
@@ -252,15 +262,15 @@
             this.btnGetTranscript.UseVisualStyleBackColor = true;
             this.btnGetTranscript.Click += new System.EventHandler(this.btnGetTranscript_Click);
             // 
-            // btnViewNote
+            // button1
             // 
-            this.btnViewNote.Location = new System.Drawing.Point(203, 88);
-            this.btnViewNote.Name = "btnViewNote";
-            this.btnViewNote.Size = new System.Drawing.Size(173, 94);
-            this.btnViewNote.TabIndex = 2;
-            this.btnViewNote.Text = "Not Görüntüle";
-            this.btnViewNote.UseVisualStyleBackColor = true;
-            this.btnViewNote.Click += new System.EventHandler(this.btnViewNote_Click);
+            this.button1.Location = new System.Drawing.Point(14, 88);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(180, 94);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Onay Bekleyen Ders Kayıtlarını Listele";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnListApprovedLessonRegistrations
             // 
@@ -303,16 +313,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1017, 451);
             this.dataGridView1.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(14, 88);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 94);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Onay Bekleyen Ders Kayıtlarını Listele";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FrmStudentDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -325,7 +325,7 @@
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmStudentDetail";
-            this.Text = "FrmStudentDetail";
+            this.Text = "Öğrenci Detay Ekranı";
             this.Load += new System.EventHandler(this.FrmStudentDetail_Load);
             this.groupBoxPersonalInformation.ResumeLayout(false);
             this.groupBoxPersonalInformation.PerformLayout();

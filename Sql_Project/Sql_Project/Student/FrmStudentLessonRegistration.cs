@@ -23,6 +23,7 @@ namespace Sql_Project.Student
 
         public void ShowTheLessonsCanTakeTheStudent()
         {
+            // Ogrencinin o donem alabilecegi dersleri ve derse ait bilgileri datagrid'te listeliyoruz
             DataTable dataTable = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(
                 "SELECT l.LessonName AS [Ders Adı], t.TeacherName + ' ' + t.TeacherLastName AS [Dersi Veren Öğretmen], " +
@@ -70,10 +71,13 @@ namespace Sql_Project.Student
 
         private void btnAddLesson_Click(object sender, EventArgs e)
         {
+            // Ogrencinin almak istemis oldugu dersi danisman onayına gonderiyoruz
             SqlCommand sqlCommand = new SqlCommand("INSERT INTO StudentsAwaitingLessonsApproval " +
                 "VALUES (" +
                 "(SELECT s.StudentId FROM Students AS s WHERE s.StudentNumber = @s_StudentNumber), " +
-                "(SELECT glt.Id FROM GivingLessonsByTeachers AS glt WHERE glt.LessonId = (SELECT l.LessonId FROM Lessons AS l WHERE l.LessonName = (@l_LessonName)) AND glt.TeacherId = (SELECT t.TeacherId FROM Teachers AS t WHERE t.TeacherName + ' ' + t.TeacherLastName = (@t_TeacherName))))", conn.connection());
+                "(SELECT glt.Id FROM GivingLessonsByTeachers AS glt " +
+                "WHERE glt.LessonId = (SELECT l.LessonId FROM Lessons AS l WHERE l.LessonName = (@l_LessonName)) " +
+                "AND glt.TeacherId = (SELECT t.TeacherId FROM Teachers AS t WHERE t.TeacherName + ' ' + t.TeacherLastName = (@t_TeacherName))))", conn.connection());
             sqlCommand.Parameters.AddWithValue("@s_StudentNumber", studentNumber);
             sqlCommand.Parameters.AddWithValue("@l_LessonName", lblLessonName.Text);
             sqlCommand.Parameters.AddWithValue("@t_TeacherName", lblTeacherName.Text);

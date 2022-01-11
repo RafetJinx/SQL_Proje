@@ -105,9 +105,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmOfficerAppointAdvisor";
-            this.Text = "FrmOfficerAppointAdvisor";
+            this.Text = "Öğretmen Atama Ekranı";
             this.Load += new System.EventHandler(this.FrmOfficerAppointAdvisor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

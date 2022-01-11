@@ -69,6 +69,7 @@ namespace Sql_Project.Teacher
             cmbStudentFullName.DisplayMember = "Text";
             cmbStudentFullName.ValueMember = "Value";
 
+            // Ogrenci profili goruntuleme ekranina gecildigi zaman veritabanında bulunan butun ogrencileri goruntuleyebilecegimiz bir combobox'a ogrencileri ekliyoruz
             SqlCommand sqlCommand = new SqlCommand("SELECT s.StudentName + ' ' + s.StudentLastName, s.StudentNumber FROM Students AS s", conn.connection());
             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
             while (sqlDataReader.Read())

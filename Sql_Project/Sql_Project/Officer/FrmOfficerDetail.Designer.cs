@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAppointAdvisor = new System.Windows.Forms.Button();
+            this.btnAddStudent = new System.Windows.Forms.Button();
+            this.btnIncreaseGrade = new System.Windows.Forms.Button();
+            this.btnAddTeacher = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblOfficerIdentityNumber = new System.Windows.Forms.Label();
             this.lblOfficerFullName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAppointAdvisor = new System.Windows.Forms.Button();
-            this.btnAddStudent = new System.Windows.Forms.Button();
-            this.btnAddTeacher = new System.Windows.Forms.Button();
-            this.btnIncreaseGrade = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -54,55 +54,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Denetimler";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.lblOfficerIdentityNumber);
-            this.groupBox2.Controls.Add(this.lblOfficerFullName);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(532, 111);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Kişisel Bilgiler";
-            // 
-            // lblOfficerIdentityNumber
-            // 
-            this.lblOfficerIdentityNumber.AutoSize = true;
-            this.lblOfficerIdentityNumber.Location = new System.Drawing.Point(128, 66);
-            this.lblOfficerIdentityNumber.Name = "lblOfficerIdentityNumber";
-            this.lblOfficerIdentityNumber.Size = new System.Drawing.Size(70, 22);
-            this.lblOfficerIdentityNumber.TabIndex = 3;
-            this.lblOfficerIdentityNumber.Text = "label4";
-            // 
-            // lblOfficerFullName
-            // 
-            this.lblOfficerFullName.AutoSize = true;
-            this.lblOfficerFullName.Location = new System.Drawing.Point(128, 39);
-            this.lblOfficerFullName.Name = "lblOfficerFullName";
-            this.lblOfficerFullName.Size = new System.Drawing.Size(70, 22);
-            this.lblOfficerFullName.TabIndex = 2;
-            this.lblOfficerFullName.Text = "label3";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "TC No:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ad Soyad:";
             // 
             // btnAppointAdvisor
             // 
@@ -124,6 +75,16 @@
             this.btnAddStudent.UseVisualStyleBackColor = true;
             this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
+            // btnIncreaseGrade
+            // 
+            this.btnIncreaseGrade.Location = new System.Drawing.Point(142, 29);
+            this.btnIncreaseGrade.Name = "btnIncreaseGrade";
+            this.btnIncreaseGrade.Size = new System.Drawing.Size(116, 61);
+            this.btnIncreaseGrade.TabIndex = 8;
+            this.btnIncreaseGrade.Text = "Yarıyıl İlerlet";
+            this.btnIncreaseGrade.UseVisualStyleBackColor = true;
+            this.btnIncreaseGrade.Click += new System.EventHandler(this.btnIncreaseGrade_Click);
+            // 
             // btnAddTeacher
             // 
             this.btnAddTeacher.Location = new System.Drawing.Point(396, 29);
@@ -134,15 +95,54 @@
             this.btnAddTeacher.UseVisualStyleBackColor = true;
             this.btnAddTeacher.Click += new System.EventHandler(this.btnAddTeacher_Click);
             // 
-            // btnIncreaseGrade
+            // groupBox2
             // 
-            this.btnIncreaseGrade.Location = new System.Drawing.Point(142, 29);
-            this.btnIncreaseGrade.Name = "btnIncreaseGrade";
-            this.btnIncreaseGrade.Size = new System.Drawing.Size(116, 61);
-            this.btnIncreaseGrade.TabIndex = 8;
-            this.btnIncreaseGrade.Text = "Yarıyıl İlerlet";
-            this.btnIncreaseGrade.UseVisualStyleBackColor = true;
-            this.btnIncreaseGrade.Click += new System.EventHandler(this.btnIncreaseGrade_Click);
+            this.groupBox2.Controls.Add(this.lblOfficerIdentityNumber);
+            this.groupBox2.Controls.Add(this.lblOfficerFullName);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(532, 111);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Kişisel Bilgiler";
+            // 
+            // lblOfficerIdentityNumber
+            // 
+            this.lblOfficerIdentityNumber.AutoSize = true;
+            this.lblOfficerIdentityNumber.Location = new System.Drawing.Point(128, 66);
+            this.lblOfficerIdentityNumber.Name = "lblOfficerIdentityNumber";
+            this.lblOfficerIdentityNumber.Size = new System.Drawing.Size(60, 22);
+            this.lblOfficerIdentityNumber.TabIndex = 3;
+            this.lblOfficerIdentityNumber.Text = "_____";
+            // 
+            // lblOfficerFullName
+            // 
+            this.lblOfficerFullName.AutoSize = true;
+            this.lblOfficerFullName.Location = new System.Drawing.Point(128, 39);
+            this.lblOfficerFullName.Name = "lblOfficerFullName";
+            this.lblOfficerFullName.Size = new System.Drawing.Size(60, 22);
+            this.lblOfficerFullName.TabIndex = 2;
+            this.lblOfficerFullName.Text = "_____";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 22);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "TC No:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ad Soyad:";
             // 
             // FrmOfficerDetail
             // 
@@ -155,7 +155,7 @@
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmOfficerDetail";
-            this.Text = "FrmOfficerDetail";
+            this.Text = "Memur Detay Ekranı";
             this.Load += new System.EventHandler(this.FrmOfficerDetail_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

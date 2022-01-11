@@ -26,6 +26,7 @@ namespace Sql_Project.Teacher
 
         private void ShowDetails()
         {
+            // Ogretmenin vermis oldugu derslerden sectigi dersi alan ogrencilerin ders notlarını datagrid'e aktariyoruz
             DataTable dt = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT stl.StudentId, stl.GivingLessonsByTeacherId, s.StudentNumber AS [Öğrenci Numarası], s.StudentName + ' ' + s.StudentLastName AS [Öğrenci Adı], " +
                 "stl.StudentLessonVisaPoint AS [Vize Notu], stl.StudentLessonFinalPoint AS [Final Notu], stl.StudentSuccessGrade AS [Başarı Notu] " +
@@ -46,6 +47,7 @@ namespace Sql_Project.Teacher
 
         private void FrmTeacherStudentGradeATest_Load(object sender, EventArgs e)
         {
+            // Ogretmenin verdigi dersleri combobox'a ekliyoruz
             SqlCommand sqlCommand = new SqlCommand("SELECT l.LessonName " +
                 "FROM GivingLessonsByTeachers AS glt " +
                 "INNER JOIN Lessons AS l " +
@@ -89,6 +91,7 @@ namespace Sql_Project.Teacher
         {
             int successGrade = Convert.ToInt32((Convert.ToDouble(mskLessonVisaPoint.Text) * 0.6 + Convert.ToDouble(mskLessonFinalPoint.Text) * 0.4));
 
+            // Datagrid'de bulunan ogrencilerin notlarinda degisiklik yapilmasini sagliyoruz
             SqlCommand sqlCommand = new SqlCommand("UPDATE StudentsTakingTheLessons SET StudentLessonVisaPoint = @p1, StudentLessonFinalPoint = @p2, StudentSuccessGrade = @p3 WHERE StudentId = @p4 AND GivingLessonsByTeacherId = @p5", conn.connection());
             sqlCommand.Parameters.AddWithValue("@p1", mskLessonVisaPoint.Text);
             sqlCommand.Parameters.AddWithValue("@p2", mskLessonFinalPoint.Text);

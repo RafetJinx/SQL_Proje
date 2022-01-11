@@ -23,6 +23,7 @@ namespace Sql_Project.Student
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Ogrencinin almis derslerden secitigi doneme gore aldigi dersler ve o dersten aldigi notlari datagrid'te listeliyoruz
             DataTable dt = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT l.LessonName AS [Ders Adı], " +
                 "l.LessonCredi AS [Kredi], stl.StudentLessonVisaPoint AS [Vize Puanı], " +

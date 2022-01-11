@@ -22,10 +22,12 @@ namespace Sql_Project.Teacher
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            // Veritabaninda girilen veriler ile uyusan bir ogretmen olup olmadigini kontrol eden sorgumuz.
             SqlCommand cmd = new SqlCommand("SELECT * FROM Teachers WHERE TeacherIdentityNumber=@p1 AND TeacherPassword=@p2", conn.connection());
             cmd.Parameters.AddWithValue("@p1", mskT_IdentityNumber.Text);
             cmd.Parameters.AddWithValue("@p2", txtT_Password.Text);
             SqlDataReader sqlDataReader = cmd.ExecuteReader();
+            // Veritabanımızda okuma gerceklestiriliyor ve girilen veriler ile eslesen bir ogretmen verisi var ise oturum acma islemi gerceklestiriliyor ve Ogretmen detay form'umuza gecis yaptiriyor
             if (sqlDataReader.Read())
             {
                 FrmTeacherDetail frmTeacherDetail = new FrmTeacherDetail();

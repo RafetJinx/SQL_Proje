@@ -312,7 +312,7 @@
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmOfficerAddingStudent";
-            this.Text = "FrmOfficerAddingStudent";
+            this.Text = "Öğrenci Ekleme Ekranı";
             this.Load += new System.EventHandler(this.FrmOfficerAddingStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

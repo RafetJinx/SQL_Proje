@@ -22,6 +22,7 @@ namespace Sql_Project.Student
         public string studentNumber;
         private void FrmStudentDetail_Load(object sender, EventArgs e)
         {
+            // Ogrenci numarası verilmis olan ogrencinin bilgilerini getiriyoruz
             SqlCommand cmd = new SqlCommand("SELECT s.StudentIdentityNumber,s.StudentNumber,s.StudentName + ' ' + s.StudentLastName," +
                 "s.StudentFaculty,s.StudentDepartment,t.TeacherName + ' ' + t.TeacherLastName,s.StudentDateOfRegistiration " +
                 "FROM Students AS s " +
@@ -45,6 +46,7 @@ namespace Sql_Project.Student
 
         private void btnGetTranscript_Click(object sender, EventArgs e)
         {
+            // Ogrencinin almis oldugu derslerden basari notu >= 50 olan dersleri datagrid'e ekleyip listeliyoruz
             DataTable dt = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("SELECT l.LessonName AS [Ders Adı], l.LessonGrade AS [Ders Yarıyılı], " +
                 "l.LessonCredi AS [Kredi], stl.StudentLessonVisaPoint AS [Vize Notu], stl.StudentLessonFinalPoint AS [Final Notu], " +

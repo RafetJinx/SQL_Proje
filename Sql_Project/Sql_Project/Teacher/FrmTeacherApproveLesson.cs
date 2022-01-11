@@ -23,6 +23,7 @@ namespace Sql_Project.Teacher
 
         private void ShowAwaitingLessons()
         {
+            // Danismani oldugu ogrencilerin onay bekleyen derslerini getiren ve datagrid'de listeliyor
             DataTable dt = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("" +
                 "SELECT s.StudentNumber AS [Öğrenci Numarası], " +
@@ -51,6 +52,7 @@ namespace Sql_Project.Teacher
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Datagrid'de sutun adina tiklanildigi zaman sorun olusmamasi icin bir onlem aliyoruz
             if (e.RowIndex != -1 && e.ColumnIndex != -1)
             {
                 lblStudentNumber.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();

@@ -22,6 +22,7 @@ namespace Sql_Project.Officer
 
         private void FrmOfficerAddingTeacher_Load(object sender, EventArgs e)
         {
+            // Belirlenmis olan branslarini combobox'imiza ekleyen sql ifademiz
             SqlCommand sqlCommand = new SqlCommand("SELECT DISTINCT(TeacherBranch) FROM Teachers", conn.connection());
             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
             while (sqlDataReader.Read())
@@ -30,8 +31,9 @@ namespace Sql_Project.Officer
             }
         }
 
-        private void btnAddStudent_Click(object sender, EventArgs e)
+        private void btnAddTeacher_Click(object sender, EventArgs e)
         {
+            // Istenen gerekli bilgileri girilmis olan ogretmen bilgilerini alip veritabanina ekleyen (ogretmen kaydimizi yapan) sql ifademiz
             SqlCommand sqlCommand = new SqlCommand("INSERT INTO Teachers VALUES(@p1,@p2,@p3,@p4,@p5,@p6,@p7)", conn.connection());
             sqlCommand.Parameters.AddWithValue("@p1", txtTeacherName.Text);
             sqlCommand.Parameters.AddWithValue("@p2", txtTeacherLastName.Text);

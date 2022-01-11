@@ -23,6 +23,7 @@ namespace Sql_Project.Student
 
         private void FrmStudentApprovedLessons_Load(object sender, EventArgs e)
         {
+            // Ogrencinin o donem alacagi ve danisman tarafindan onaylanmis dersleri datagrid'te listeliyoruz
             DataTable dataTable = new DataTable();
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(
                 "SELECT l.LessonName AS [Ders Adı], t.TeacherName + ' ' + t.TeacherLastName AS [Dersi Veren Öğretmen], " +

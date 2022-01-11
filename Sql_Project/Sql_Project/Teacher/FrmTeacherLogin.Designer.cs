@@ -106,7 +106,7 @@
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmTeacherLogin";
-            this.Text = "FrmTeacherLogin";
+            this.Text = "Öğretmen Giriş Ekranı";
             this.Load += new System.EventHandler(this.FrmTeacherLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -33,7 +33,6 @@
             this.txtTeacherName = new System.Windows.Forms.TextBox();
             this.txtTeacherPassword = new System.Windows.Forms.TextBox();
             this.mskTeacherIdentityNumber = new System.Windows.Forms.MaskedTextBox();
-            this.btnAddStudent = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbTeacherIsAdvisor = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnAddTeacher = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbTeacherGender
@@ -86,16 +86,6 @@
             this.mskTeacherIdentityNumber.Size = new System.Drawing.Size(139, 29);
             this.mskTeacherIdentityNumber.TabIndex = 27;
             this.mskTeacherIdentityNumber.ValidatingType = typeof(int);
-            // 
-            // btnAddStudent
-            // 
-            this.btnAddStudent.Location = new System.Drawing.Point(213, 321);
-            this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(162, 45);
-            this.btnAddStudent.TabIndex = 26;
-            this.btnAddStudent.Text = "Öğretmen Ekle";
-            this.btnAddStudent.UseVisualStyleBackColor = true;
-            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // label7
             // 
@@ -189,12 +179,23 @@
             this.label8.TabIndex = 34;
             this.label8.Text = "Danışman Mı:";
             // 
+            // btnAddTeacher
+            // 
+            this.btnAddTeacher.Location = new System.Drawing.Point(213, 319);
+            this.btnAddTeacher.Name = "btnAddTeacher";
+            this.btnAddTeacher.Size = new System.Drawing.Size(162, 45);
+            this.btnAddTeacher.TabIndex = 36;
+            this.btnAddTeacher.Text = "Öğretmen Ekle";
+            this.btnAddTeacher.UseVisualStyleBackColor = true;
+            this.btnAddTeacher.Click += new System.EventHandler(this.btnAddTeacher_Click);
+            // 
             // FrmOfficerAddingTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.ClientSize = new System.Drawing.Size(475, 409);
+            this.ClientSize = new System.Drawing.Size(475, 377);
+            this.Controls.Add(this.btnAddTeacher);
             this.Controls.Add(this.cmbTeacherIsAdvisor);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cmbTeacherBranch);
@@ -204,7 +205,6 @@
             this.Controls.Add(this.txtTeacherName);
             this.Controls.Add(this.txtTeacherPassword);
             this.Controls.Add(this.mskTeacherIdentityNumber);
-            this.Controls.Add(this.btnAddStudent);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -214,7 +214,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FrmOfficerAddingTeacher";
-            this.Text = "FrmOfficerAddingTeacher";
+            this.Text = "Öğretmen Ekleme Ekranı";
             this.Load += new System.EventHandler(this.FrmOfficerAddingTeacher_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -228,7 +228,6 @@
         private System.Windows.Forms.TextBox txtTeacherName;
         private System.Windows.Forms.TextBox txtTeacherPassword;
         private System.Windows.Forms.MaskedTextBox mskTeacherIdentityNumber;
-        private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -239,5 +238,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbTeacherIsAdvisor;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnAddTeacher;
     }
 }

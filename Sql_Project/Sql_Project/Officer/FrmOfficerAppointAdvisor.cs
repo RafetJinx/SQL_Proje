@@ -22,6 +22,7 @@ namespace Sql_Project.Officer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Secilen ogretmeni danisman olarak atayan sql ifademiz
             SqlCommand sqlCommand = new SqlCommand("UPDATE Teachers SET TeacherAdvisor = 1 WHERE TeacherIdentityNumber = " + lblTeacherIdentityNumber.Text, conn.connection());
             sqlCommand.ExecuteNonQuery();
             conn.connection().Close();
@@ -38,6 +39,7 @@ namespace Sql_Project.Officer
             cmbTeacherFullName.DisplayMember = "Text";
             cmbTeacherFullName.ValueMember = "Value";
 
+            // Kayıtlı olan ve danisman olmayan ogretmenleri combobox'a ekliyoruz
             SqlCommand sqlCommand = new SqlCommand("SELECT t.TeacherName + ' ' + t.TeacherLastName, t.TeacherIdentityNumber FROM Teachers AS t WHERE TeacherAdvisor = 0", conn.connection());
             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
             while (sqlDataReader.Read())

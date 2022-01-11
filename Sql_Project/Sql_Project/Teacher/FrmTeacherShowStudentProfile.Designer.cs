@@ -39,16 +39,16 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lblStudentFaculty = new System.Windows.Forms.Label();
-            this.lblStudentDepartment = new System.Windows.Forms.Label();
-            this.lblStudentDateOfRegistration = new System.Windows.Forms.Label();
-            this.lblStudentGrade = new System.Windows.Forms.Label();
             this.lblStudentAdvisorFullName = new System.Windows.Forms.Label();
+            this.lblStudentGrade = new System.Windows.Forms.Label();
+            this.lblStudentDateOfRegistration = new System.Windows.Forms.Label();
+            this.lblStudentDepartment = new System.Windows.Forms.Label();
+            this.lblStudentFaculty = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -174,77 +174,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Öğrencinin Bilgileri";
             // 
-            // label4
+            // lblStudentAdvisorFullName
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 35);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 22);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Fakültesi:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 62);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 22);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Bölümü:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 89);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(140, 22);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Kayıt Tarihi:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 116);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(190, 22);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Bulunduğu Yarıyıl:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 143);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 22);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Danışmanı:";
-            // 
-            // lblStudentFaculty
-            // 
-            this.lblStudentFaculty.AutoSize = true;
-            this.lblStudentFaculty.Location = new System.Drawing.Point(233, 35);
-            this.lblStudentFaculty.Name = "lblStudentFaculty";
-            this.lblStudentFaculty.Size = new System.Drawing.Size(70, 22);
-            this.lblStudentFaculty.TabIndex = 5;
-            this.lblStudentFaculty.Text = "label9";
-            // 
-            // lblStudentDepartment
-            // 
-            this.lblStudentDepartment.AutoSize = true;
-            this.lblStudentDepartment.Location = new System.Drawing.Point(233, 62);
-            this.lblStudentDepartment.Name = "lblStudentDepartment";
-            this.lblStudentDepartment.Size = new System.Drawing.Size(80, 22);
-            this.lblStudentDepartment.TabIndex = 6;
-            this.lblStudentDepartment.Text = "label10";
-            // 
-            // lblStudentDateOfRegistration
-            // 
-            this.lblStudentDateOfRegistration.AutoSize = true;
-            this.lblStudentDateOfRegistration.Location = new System.Drawing.Point(233, 89);
-            this.lblStudentDateOfRegistration.Name = "lblStudentDateOfRegistration";
-            this.lblStudentDateOfRegistration.Size = new System.Drawing.Size(80, 22);
-            this.lblStudentDateOfRegistration.TabIndex = 7;
-            this.lblStudentDateOfRegistration.Text = "label11";
+            this.lblStudentAdvisorFullName.AutoSize = true;
+            this.lblStudentAdvisorFullName.Location = new System.Drawing.Point(233, 143);
+            this.lblStudentAdvisorFullName.Name = "lblStudentAdvisorFullName";
+            this.lblStudentAdvisorFullName.Size = new System.Drawing.Size(80, 22);
+            this.lblStudentAdvisorFullName.TabIndex = 9;
+            this.lblStudentAdvisorFullName.Text = "label13";
             // 
             // lblStudentGrade
             // 
@@ -255,16 +192,79 @@
             this.lblStudentGrade.TabIndex = 8;
             this.lblStudentGrade.Text = "label12";
             // 
-            // lblStudentAdvisorFullName
+            // lblStudentDateOfRegistration
             // 
-            this.lblStudentAdvisorFullName.AutoSize = true;
-            this.lblStudentAdvisorFullName.Location = new System.Drawing.Point(233, 143);
-            this.lblStudentAdvisorFullName.Name = "lblStudentAdvisorFullName";
-            this.lblStudentAdvisorFullName.Size = new System.Drawing.Size(80, 22);
-            this.lblStudentAdvisorFullName.TabIndex = 9;
-            this.lblStudentAdvisorFullName.Text = "label13";
+            this.lblStudentDateOfRegistration.AutoSize = true;
+            this.lblStudentDateOfRegistration.Location = new System.Drawing.Point(233, 89);
+            this.lblStudentDateOfRegistration.Name = "lblStudentDateOfRegistration";
+            this.lblStudentDateOfRegistration.Size = new System.Drawing.Size(80, 22);
+            this.lblStudentDateOfRegistration.TabIndex = 7;
+            this.lblStudentDateOfRegistration.Text = "label11";
             // 
-            // FrmShowStudentProfile
+            // lblStudentDepartment
+            // 
+            this.lblStudentDepartment.AutoSize = true;
+            this.lblStudentDepartment.Location = new System.Drawing.Point(233, 62);
+            this.lblStudentDepartment.Name = "lblStudentDepartment";
+            this.lblStudentDepartment.Size = new System.Drawing.Size(80, 22);
+            this.lblStudentDepartment.TabIndex = 6;
+            this.lblStudentDepartment.Text = "label10";
+            // 
+            // lblStudentFaculty
+            // 
+            this.lblStudentFaculty.AutoSize = true;
+            this.lblStudentFaculty.Location = new System.Drawing.Point(233, 35);
+            this.lblStudentFaculty.Name = "lblStudentFaculty";
+            this.lblStudentFaculty.Size = new System.Drawing.Size(70, 22);
+            this.lblStudentFaculty.TabIndex = 5;
+            this.lblStudentFaculty.Text = "label9";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 143);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 22);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Danışmanı:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 116);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(190, 22);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Bulunduğu Yarıyıl:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 89);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(140, 22);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Kayıt Tarihi:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 62);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 22);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Bölümü:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 22);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Fakültesi:";
+            // 
+            // FrmTeacherShowStudentProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -277,8 +277,8 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "FrmShowStudentProfile";
-            this.Text = "FrmShowStudentProfile";
+            this.Name = "FrmTeacherShowStudentProfile";
+            this.Text = "Öğrenci Profili Görüntüleme Ekranı";
             this.Load += new System.EventHandler(this.FrmShowStudentProfile_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

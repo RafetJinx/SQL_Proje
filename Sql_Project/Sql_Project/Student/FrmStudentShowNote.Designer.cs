@@ -108,7 +108,7 @@
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmStudentShowNote";
-            this.Text = "FrmStudentShowNote";
+            this.Text = "Not Görüntüleme Ekranı";
             this.Load += new System.EventHandler(this.FrmStudentShowNote_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

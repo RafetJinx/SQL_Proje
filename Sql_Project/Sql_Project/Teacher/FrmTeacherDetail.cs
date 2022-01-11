@@ -22,6 +22,7 @@ namespace Sql_Project.Teacher
         public string Tc_T;
         private void FrmTeacherDetail_Load(object sender, EventArgs e)
         {
+            // TC No'su girilmis olan ogretmen'in bilgilerinin goruntulenmesini sagliyoruz
             SqlCommand sqlCommand = new SqlCommand("SELECT TeacherName + ' ' + TeacherLastName, TeacherIdentityNumber, TeacherAdvisor, TeacherBranch FROM Teachers WHERE TeacherIdentityNumber =" + Tc_T, conn.connection());
             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
             if (sqlDataReader.Read())
@@ -43,6 +44,7 @@ namespace Sql_Project.Teacher
 
         private void btnTeacherAdvisorApprove_Click(object sender, EventArgs e)
         {
+            // Ogretmen danisman ise danisman onayı sayfasina erisim saglayabiliyor
             if(lblTeacherIsAdvisor.Text == "Evet")
             {
                 FrmTeacherApproveLesson frmTeacherApproveLesson = new FrmTeacherApproveLesson();

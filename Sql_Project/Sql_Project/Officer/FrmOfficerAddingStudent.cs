@@ -22,6 +22,7 @@ namespace Sql_Project.Officer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Istenen gerekli bilgileri girilmis olan ogrenci bilgilerini alip veritabanina ekleyen (ogrenci kaydimizi yapan) sql ifademiz
             SqlCommand sqlCommand = new SqlCommand("INSERT INTO Students VALUES(@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", conn.connection());
             sqlCommand.Parameters.AddWithValue("@p1", mskStudentNumber.Text);
             sqlCommand.Parameters.AddWithValue("@p2", mskStudentIdentityNumber.Text);
@@ -56,6 +57,7 @@ namespace Sql_Project.Officer
             cmbStudentAdvisorFullName.DisplayMember = "Text";
             cmbStudentAdvisorFullName.ValueMember = "Value";
 
+            // Danismani olabilecek ogretmenleri goruntuleyebilmek icin danisman ogretmenleri combobox'imiza ekleyen sql ifademiz
             SqlCommand sqlCommand = new SqlCommand("SELECT t.TeacherName + ' ' + t.TeacherLastName, t.TeacherId FROM Teachers AS t WHERE t.TeacherAdvisor = 1", conn.connection());
             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
             while (sqlDataReader.Read())

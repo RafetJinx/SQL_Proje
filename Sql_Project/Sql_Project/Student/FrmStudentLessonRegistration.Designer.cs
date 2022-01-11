@@ -36,11 +36,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnAddLesson = new System.Windows.Forms.Button();
             this.lblLessonGrade = new System.Windows.Forms.Label();
             this.lblLessonCredit = new System.Windows.Forms.Label();
             this.lblTeacherName = new System.Windows.Forms.Label();
             this.lblLessonName = new System.Windows.Forms.Label();
-            this.btnAddLesson = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -132,6 +132,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Seçilen Dersin Bilgileri";
             // 
+            // btnAddLesson
+            // 
+            this.btnAddLesson.Location = new System.Drawing.Point(596, 103);
+            this.btnAddLesson.Name = "btnAddLesson";
+            this.btnAddLesson.Size = new System.Drawing.Size(297, 52);
+            this.btnAddLesson.TabIndex = 7;
+            this.btnAddLesson.Text = "Seçilen Dersin Kaydını Yap";
+            this.btnAddLesson.UseVisualStyleBackColor = true;
+            this.btnAddLesson.Click += new System.EventHandler(this.btnAddLesson_Click);
+            // 
             // lblLessonGrade
             // 
             this.lblLessonGrade.AutoSize = true;
@@ -168,16 +178,6 @@
             this.lblLessonName.TabIndex = 7;
             this.lblLessonName.Text = "_____";
             // 
-            // btnAddLesson
-            // 
-            this.btnAddLesson.Location = new System.Drawing.Point(596, 103);
-            this.btnAddLesson.Name = "btnAddLesson";
-            this.btnAddLesson.Size = new System.Drawing.Size(297, 52);
-            this.btnAddLesson.TabIndex = 7;
-            this.btnAddLesson.Text = "Seçilen Dersin Kaydını Yap";
-            this.btnAddLesson.UseVisualStyleBackColor = true;
-            this.btnAddLesson.Click += new System.EventHandler(this.btnAddLesson_Click);
-            // 
             // FrmStudentLessonRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -190,7 +190,7 @@
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmStudentLessonRegistration";
-            this.Text = "FrmStudentLessonRegistration";
+            this.Text = "Öğrenci Ders Kaydı Ekranı";
             this.Load += new System.EventHandler(this.FrmStudentLessonRegistration_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

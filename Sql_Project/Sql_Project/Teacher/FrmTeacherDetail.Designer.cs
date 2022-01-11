@@ -67,36 +67,36 @@
             this.lblTeacherBranch.AutoSize = true;
             this.lblTeacherBranch.Location = new System.Drawing.Point(176, 129);
             this.lblTeacherBranch.Name = "lblTeacherBranch";
-            this.lblTeacherBranch.Size = new System.Drawing.Size(70, 22);
+            this.lblTeacherBranch.Size = new System.Drawing.Size(60, 22);
             this.lblTeacherBranch.TabIndex = 7;
-            this.lblTeacherBranch.Text = "label8";
+            this.lblTeacherBranch.Text = "_____";
             // 
             // lblTeacherIsAdvisor
             // 
             this.lblTeacherIsAdvisor.AutoSize = true;
             this.lblTeacherIsAdvisor.Location = new System.Drawing.Point(176, 102);
             this.lblTeacherIsAdvisor.Name = "lblTeacherIsAdvisor";
-            this.lblTeacherIsAdvisor.Size = new System.Drawing.Size(70, 22);
+            this.lblTeacherIsAdvisor.Size = new System.Drawing.Size(60, 22);
             this.lblTeacherIsAdvisor.TabIndex = 6;
-            this.lblTeacherIsAdvisor.Text = "label7";
+            this.lblTeacherIsAdvisor.Text = "_____";
             // 
             // lblTeacherIdentityNumber
             // 
             this.lblTeacherIdentityNumber.AutoSize = true;
             this.lblTeacherIdentityNumber.Location = new System.Drawing.Point(176, 75);
             this.lblTeacherIdentityNumber.Name = "lblTeacherIdentityNumber";
-            this.lblTeacherIdentityNumber.Size = new System.Drawing.Size(70, 22);
+            this.lblTeacherIdentityNumber.Size = new System.Drawing.Size(60, 22);
             this.lblTeacherIdentityNumber.TabIndex = 5;
-            this.lblTeacherIdentityNumber.Text = "label6";
+            this.lblTeacherIdentityNumber.Text = "_____";
             // 
             // lblTeacherFullName
             // 
             this.lblTeacherFullName.AutoSize = true;
             this.lblTeacherFullName.Location = new System.Drawing.Point(176, 48);
             this.lblTeacherFullName.Name = "lblTeacherFullName";
-            this.lblTeacherFullName.Size = new System.Drawing.Size(70, 22);
+            this.lblTeacherFullName.Size = new System.Drawing.Size(60, 22);
             this.lblTeacherFullName.TabIndex = 4;
-            this.lblTeacherFullName.Text = "label5";
+            this.lblTeacherFullName.Text = "_____";
             // 
             // label4
             // 
@@ -187,7 +187,7 @@
             this.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmTeacherDetail";
-            this.Text = "FrmTeacherDetail";
+            this.Text = "Öğretmen Detay Ekranı";
             this.Load += new System.EventHandler(this.FrmTeacherDetail_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
